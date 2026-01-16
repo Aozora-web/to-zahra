@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Untukmu - Aozora</title>
+    <title>Untukmu - from Aozora</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
     
     <style>
@@ -11,6 +11,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
+            /* Deep Space Blue Gradient */
             background: linear-gradient(to bottom, #0f1016, #1b202e);
             height: 100vh;
             overflow: hidden; 
@@ -22,6 +23,7 @@
         }
 
         /* --- STARS (OPTIMIZED - ANTI LAG) --- */
+        /* Animasi menggunakan opacity & transform scale yg ringan */
         .night {
             position: fixed;
             width: 100%;
@@ -50,7 +52,7 @@
             top: 50%;
             left: -100px;
             z-index: 1;
-            animation: flyAcross 18s linear infinite;
+            animation: flyAcross 20s linear infinite;
             filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
             opacity: 0.8;
             pointer-events: none;
@@ -85,6 +87,7 @@
             animation: wingRight 0.5s ease-in-out infinite alternate;
         }
 
+        /* Jalur Terbang Kupu-kupu */
         @keyframes flyAcross {
             0% { left: -10%; top: 60%; transform: scale(0.5) rotate(20deg); }
             25% { top: 40%; }
@@ -150,12 +153,12 @@
         .container {
             width: 90%;
             max-width: 550px;
-            margin: 20px auto 80px auto; 
+            margin: 20px auto 100px auto; 
         }
 
         /* --- CARD STYLE --- */
         .card {
-            background: rgba(255, 255, 255, 0.05); /* Transparan ringan */
+            background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
             border-radius: 15px;
@@ -183,8 +186,10 @@
             margin-top: 40px;
             color: #ffc3a0;
             text-align: right;
+            padding-bottom: 10px;
         }
 
+        /* Quote Terakhir Special Style */
         .final-quote {
             font-style: italic;
             border-left: 3px solid #ffc3a0;
@@ -195,6 +200,7 @@
             padding: 15px;
             border-radius: 0 10px 10px 0;
             font-size: 0.95rem;
+            line-height: 1.6;
         }
 
         /* Music Control */
@@ -209,10 +215,11 @@
         }
         @keyframes spin { 100% { transform: rotate(360deg); } }
 
-        /* Responsive */
+        /* Responsive Mobile */
         @media (max-width: 480px) {
             .card { padding: 30px 20px; }
             .btn-start { font-size: 1.5rem; padding: 12px 40px; }
+            .container { width: 88%; margin-top: 30px; }
         }
     </style>
 </head>
@@ -240,18 +247,54 @@
         <div class="container">
             <div class="card">
                 
-                <p>Saat ini, aku hanya bisa mencintaimu dalam doa, sembari pelan-pelan menata diriku. Bukan karena tak berani mendekat, tapi karena aku ingin tumbuh dengan utuh. Orang seindah kamu, rasanya terlalu sayang jika harus menerima rasa yang masih setengah. Maka aku memilih berjalan perlahan, memperbaiki diri tanpa suara, menyelesaikan hal-hal yang belum tuntas, belajar menjadi tenang, dewasa, dan bertanggung jawab. Aku percaya, cinta yang baik tak perlu tergesa, ia tahu kapan harus menunggu dan kapan harus datang.</p>
+                <p>Saat ini, aku hanya bisa mencintaimu dalam doa, sembari pelan-pelan menata diriku. Bukan karena aku tak berani mendekat, melainkan karena aku ingin tumbuh dengan utuh. Orang seindah kamu, rasanya terlalu berharga jika harus menerima rasa yang masih setengah. Maka aku memilih berjalan perlahan, memperbaiki diri tanpa banyak suara, menuntaskan hal-hal yang belum selesai, belajar menenangkan hati, mendewasakan pikiran, dan memikul tanggung jawab dengan penuh kesadaran. Aku percaya, cinta yang baik tak pernah tergesa; ia tahu kapan harus menunggu, dan kapan harus datang dengan cara yang benar.</p>
 
-                <p>Kamu adalah bunga yang istimewa. Dan <span class="highlight">bunga tak seharusnya dipetik sebelum waktunya.</span> Aku ingin menjagamu, bukan merusakmu lewat maksiat yang dibungkus rindu, bukan melalui pacaran yang sering kali lebih banyak melukai daripada menenangkan.</p>
+                <p>Kamu adalah bunga yang istimewa. Dan <span class="highlight">bunga tak seharusnya dipetik sebelum waktunya.</span> Aku ingin menjagamu dalam batas yang Allah tetapkan, bukan merusakmu lewat maksiat yang dibungkus rindu, bukan melalui pacaran yang sering kali lebih banyak melukai daripada menenangkan. Dan jika rasa ini harus dijaga dari kejauhan, maka biarlah begitu - asal tetap bersih dan diridhai.</p>
 
-                <p>Jika suatu hari kita dipertemukan oleh cara-Nya, aku ingin datang dengan niat yang lurus dan langkah yang benar. Bukan sekadar ingin memiliki, melainkan siap menjaga dengan penuh hormat, menghargai dengan sepenuh hati, dan bertanggung jawab atas setiap rasa yang aku titipkan. Aku ingin hadir sebagai tempat yang aman, bukan sekadar persinggahan. Sebagai seseorang yang memilih bertahan, bukan datang lalu pergi. Dengan kesabaran, komitmen, dan doa yang sama, aku ingin berjalan bersamamu, menjaga apa yang telah dipercayakan, hingga cinta ini benar-benar menjadi ibadah.</p>
+                <p>Jika kelak Allah mempertemukan kita<br>
+                dalam skenario terbaik yang Dia susun dengan penuh kasih,<br>
+                izinkan aku datang perlahan, tanpa gaduh dan tanpa tergesa.<br>
+                Membawa niat yang telah lama aku luruskan dalam doa,<br>
+                serta langkah yang kujaga agar tak keluar dari batas ridha-Nya.</p>
 
-                <p>Tapi jika nantinya takdir tidak bisa menyatukan kita, aku tetap bersyukur pernah mengagumi dan mencintai orang seindah dirimu. Senang rasanya bisa menaruh rasa dengan cara yang tenang dan penuh hormat. Aku akan terus berdoa, sampai Tuhan membahagiakanmu, sampai kamu dipertemukan dengan seseorang yang jauh lebih baik dariku, yang memang diperuntukkan untuk mendampingi langkahmu dalam menuju Ridha-Nya.</p>
+                <p>Bukan sekadar ingin memiliki,<br>
+                melainkan ingin menjaga dengan penuh adab,<br>
+                mencintai dengan rasa takut akan dosa,<br>
+                dan bertanggung jawab atas setiap rasa<br>
+                yang aku titipkan dengan nama-Nya.</p>
+
+                <p>Aku ingin menjadi tempat yang teduh untuk pulang,<br>
+                bukan persinggahan yang hanya ramai di awal lalu sepi.<br>
+                Seseorang yang memilih bertahan dalam doa-doa yang panjang,<br>
+                bukan datang karena rindu lalu pergi saat lelah.<br>
+                Dengan sabar yang terus kupelajari,<br>
+                komitmen yang kupupuk dalam diam,<br>
+                dan niat yang kuserahkan sepenuhnya pada-Nya,<br>
+                aku ingin berjalan bersamamu,<br>
+                menjaga amanah yang Allah titipkan,<br>
+                hingga cinta ini tumbuh tenang<br>
+                dan bernilai ibadah di hadapan-Nya.</p>
+
+                <p>Namun jika takdir-Nya menuliskan jalan yang berbeda,
+                aku tetap bersyukur pernah diberi kesempatan
+                mengagumi salah satu ciptaan-Nya yang paling indah dalam dirimu.
+                Ada damai dalam mencintaimu dari kejauhan,
+                ada ikhlas dalam menjaga jarak tanpa mengurangi doa.</p>
+
+                <p>Tak perlu menungguku, jika lelah nantinya.
+                Jangan menahan langkah hanya karena aku memilih diam.
+                Aku akan terus memohon kepada-Nya,
+                agar Dia memeluk hidupmu dengan kebahagiaan,
+                mempertemukanmu dengan seseorang
+                yang lebih baik dariku,
+                yang benar-benar Dia pilih
+                untuk menggenggam tanganmu
+                dan menuntun langkahmu dalam menuju ridha-Nya.</p>
 
                 <p>Untuk sekarang, biarlah doaku yang sampai lebih dulu. Biarlah Allah yang memelihara rasaku dan menjagamu. Karena mencintaimu dengan cara yang benar adalah bentuk sayang paling jujur yang bisa aku berikan.</p>
 
                 <p class="final-quote">
-                    "Maaf ya, Zahra, kalo harus bertemu dengan orang seperti ini, bukan orang-orang pada umumnya ketika mencintai seseorang."
+                    "Maaf ya, Zahra, jika harus berjumpa dengan orang sepertiku, yang mencintai dengan cara yang sunyi, pelan, dan banyak menahan diri, bukan orang-orang pada umumnya ketika mencintai."
                 </p>
 
                 <div class="signature">
@@ -268,7 +311,7 @@
         // --- STARS GENERATOR (LIGHTWEIGHT) ---
         function createStars() {
             const container = document.getElementById('star-container');
-            const starCount = 60; // Jumlah bintang optimal
+            const starCount = 60; // Jumlah optimal untuk HP
 
             for (let i = 0; i < starCount; i++) {
                 const star = document.createElement('div');
@@ -310,7 +353,7 @@
                 opener.style.display = 'none';
                 wrapper.style.display = 'block';
                 
-                // Show Content
+                // Show Content (Fade In)
                 setTimeout(() => {
                     wrapper.style.opacity = '1';
                 }, 50);
